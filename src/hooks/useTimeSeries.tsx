@@ -16,13 +16,7 @@ type MapDate = {
 }
 
 type TimeSeriesData = {
-  dataBad: number[]
-  dataGood: number[]
-  dataMedian: number[]
-}
-
-type TimeSeriesChartObj = {
-  labels: number[]
+  labels?: number[]
   dataBad: number[]
   dataGood: number[]
   dataMedian: number[]
@@ -38,8 +32,8 @@ type TimeSeriesProps = {
 }
 
 type TimeSeriesHookObjects = {
-  chartData: TimeSeriesChartObj
-  tableData: TimeSeriesChartObj
+  chartData: TimeSeriesData
+  tableData: TimeSeriesData
 }
 
 function mapDate({ t, mu, sigma, fee, initialSum, monthlySum }): MapDate {
@@ -100,7 +94,7 @@ function getData(timeSeries: TimeSeries): TimeSeriesData {
   return { dataBad, dataGood, dataMedian }
 }
 
-function getChartData(timeSeries: TimeSeries): TimeSeriesChartObj {
+function getChartData(timeSeries: TimeSeries): TimeSeriesData {
   const { dataBad, dataGood, dataMedian } = getData(timeSeries)
 
   const labels = timeSeries.median.map((v, idx) => (idx % 12 === 0 ? idx / 12 : idx))
@@ -113,7 +107,7 @@ function getChartData(timeSeries: TimeSeries): TimeSeriesChartObj {
   }
 }
 
-function getTableData(timeSeries: TimeSeries): TimeSeriesChartObj {
+function getTableData(timeSeries: TimeSeries): TimeSeriesData {
   const { dataBad, dataGood, dataMedian } = getData(timeSeries)
   const labels = timeSeries.median.map((v, idx) => idx)
 
