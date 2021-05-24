@@ -5,6 +5,8 @@ import RiskLevelSelector from '@/components/RiskLevelSelector'
 import RiskLevelProgressBar from '@/components/RiskLevelProgressBar'
 import Button from '@/components/Button'
 
+import { FormContainer } from './styles'
+
 const Form: React.FC = () => {
   const history = useHistory()
   const {
@@ -24,7 +26,7 @@ const Form: React.FC = () => {
   }
 
   return (
-    <form>
+    <FormContainer>
       <label>
         Initial Investment
         <input
@@ -56,7 +58,7 @@ const Form: React.FC = () => {
       <Button data-cy="btnCalculate" onClick={handleNextPage}>
         Calculate
       </Button>
-    </form>
+    </FormContainer>
   )
 }
 
