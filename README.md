@@ -1,9 +1,10 @@
-<div style="max-width:1120px;margin:0 auto">
-  <header style="display:flex;flex-direction:row;width: 100%;">
-    <img src="./src/assets/logo.svg">
-    <h2> Scalable Capital - Code Challenge </h2>
-  </header>
-</div>
+<h2 align="center">
+    <img src="./src/assets/logo.svg" width="30%">
+</h2>
+
+<h2 align="center">
+    Code Challenge
+</h2>
 
 ---
 
