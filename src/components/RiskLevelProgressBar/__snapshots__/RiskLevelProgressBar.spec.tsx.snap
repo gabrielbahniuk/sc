@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Progress Bar should render a progress bar 1`] = `
+Array [
+  <div
+    className="sc-bdnxRM WVzIi"
+  >
+    <span
+      data-cy="progressBar"
+    />
+  </div>,
+  <div
+    className="sc-gtsrHT hDLekd"
+  >
+    <span>
+      Low Risk
+    </span>
+    <span>
+      High Risk
+    </span>
+  </div>,
+]
+`
