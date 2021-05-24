@@ -196,4 +196,4 @@ exports[`Test Table component should render Table if isVisible prop is true 1`] 
     </tbody>
   </table>
 </div>
-`
+`;

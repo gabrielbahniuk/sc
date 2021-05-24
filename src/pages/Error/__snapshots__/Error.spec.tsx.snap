@@ -2,7 +2,7 @@
 
 exports[`Error Component should render Error component 1`] = `
 <div
-  className="sc-gtsrHT gqsTP"
+  className="sc-gtsrHT gmDiFo"
 >
   <h1
     data-cy="titleError"
@@ -10,10 +10,10 @@ exports[`Error Component should render Error component 1`] = `
     Uuups, there was probably a network problem :(
   </h1>
   <button
-    className="sc-bdnxRM kjnohf"
+    className="sc-bdnxRM dmWuXT"
     data-cy="btnReset"
   >
     Let's try again
   </button>
 </div>
-`
+`;

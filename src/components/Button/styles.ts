@@ -9,7 +9,12 @@ export const Container = styled.button`
   border-radius: 14px 7px 14px 7px;
   border: 0;
   font-size: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   transition: filter 0.2s;
   font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `

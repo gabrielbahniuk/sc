@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test Form component should render Form 1`] = `
-<form>
+<form
+  className="sc-hKFxyN dsJelp"
+>
   <label>
     Initial Investment
     <input
@@ -148,7 +150,7 @@ exports[`Test Form component should render Form 1`] = `
     />
   </div>
   <div
-    className="sc-dlnjwi jCSczd"
+    className="sc-dlnjwi gvUrps"
   >
     <span>
       Low Risk
@@ -158,11 +160,11 @@ exports[`Test Form component should render Form 1`] = `
     </span>
   </div>
   <button
-    className="sc-bdnxRM kjnohf"
+    className="sc-bdnxRM dmWuXT"
     data-cy="btnCalculate"
     onClick={[Function]}
   >
     Calculate
   </button>
 </form>
-`
+`;

@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  margin-top: 2rem;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  svg {
+    width: 15%;
+  }
 `

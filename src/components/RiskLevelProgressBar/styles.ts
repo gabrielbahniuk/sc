@@ -26,6 +26,7 @@ export const ProgressBar = styled.div`
 
 export const ProgressLabelContainer = styled.div`
   display: flex;
+  width: 100%;
   justify-content: space-between;
   span {
     color: var(--text-color);

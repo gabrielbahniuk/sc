@@ -2,12 +2,14 @@
 
 exports[`InitialInvestment Page should match snapshot 1`] = `
 <div
-  className="sc-hKFxyN hvkDke"
+  className="sc-eCApnc kXjkOl"
 >
   <h1>
     Investments Calculator
   </h1>
-  <form>
+  <form
+    className="sc-hKFxyN dsJelp"
+  >
     <label>
       Initial Investment
       <input
@@ -154,7 +156,7 @@ exports[`InitialInvestment Page should match snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-gtsrHT hDLekd"
+      className="sc-gtsrHT htXvXo"
     >
       <span>
         Low Risk
@@ -164,7 +166,7 @@ exports[`InitialInvestment Page should match snapshot 1`] = `
       </span>
     </div>
     <button
-      className="sc-dlnjwi iTVini"
+      className="sc-dlnjwi gafhhG"
       data-cy="btnCalculate"
       onClick={[Function]}
     >

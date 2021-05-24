@@ -33,11 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased
   }
 
-  button {
-    cursor: pointer;
-  }
-
-  body, input, textarea, button {
+  body, input, button {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
   }
