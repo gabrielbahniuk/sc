@@ -2,4 +2,8 @@ node_modules
 jest.config.js
 coverage
 public
+*.json
+*.svg
+__snapshots__
+cypress
 webpack.config.js
