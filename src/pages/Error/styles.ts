@@ -1,17 +1,19 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  margin-top: 4rem;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1120px;
+  width: 80%;
 
-  section {
+  h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+  button {
     width: 80%;
-    h1 {
-      width: 100%;
-      font-size: 2.5rem;
-      color: var(--text-color);
-    }
   }
 `

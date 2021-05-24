@@ -2,7 +2,7 @@
 
 exports[`Error Component should render Error component 1`] = `
 <div
-  className="sc-gtsrHT gmDiFo"
+  className="sc-gtsrHT esTjxo"
 >
   <h1
     data-cy="titleError"
