@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Component should render Error component 1`] = `
+<div
+  className="sc-gtsrHT gqsTP"
+>
+  <h1
+    data-cy="titleError"
+  >
+    Uuups, there was probably a network problem :(
+  </h1>
+  <button
+    className="sc-bdnxRM kjnohf"
+    data-cy="btnReset"
+  >
+    Let's try again
+  </button>
+</div>
+`
