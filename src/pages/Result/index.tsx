@@ -28,9 +28,10 @@ const Result: React.FC = () => {
   async function loadData(): Promise<void> {
     try {
       const { data } = await api.get('/api/cones')
-      if (data) {
-        setCones(data)
+      if (!data) {
+        return
       }
+      setCones(data)
     } catch (error) {
       setHasError(true)
     }
