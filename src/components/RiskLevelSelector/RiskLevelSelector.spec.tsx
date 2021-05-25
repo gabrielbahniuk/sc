@@ -1,5 +1,5 @@
 import React from 'react'
-import RiskLevelSelector from '.'
+import { RiskLevelSelector } from './RiskLevelSelector'
 import { create } from 'react-test-renderer'
 import { shallow, ShallowWrapper } from 'enzyme'
 

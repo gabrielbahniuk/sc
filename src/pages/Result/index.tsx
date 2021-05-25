@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useInvestments } from '@/hooks'
 import { api } from '@/services/api'
-import Error from '@/pages/Error'
-import Chart from '@/components/Chart'
-import Table from '@/components/Table'
-import Button from '@/components/Button'
+import { Error } from '@/pages/Error'
+import { Chart } from '@/components/Chart'
+import { Table } from '@/components/Table'
+import { Button } from '@/components/Button'
 
 import { ButtonSection, Container } from './styles'
 
@@ -81,4 +81,4 @@ const Result: React.FC = () => {
   )
 }
 
-export default Result
+export { Result }

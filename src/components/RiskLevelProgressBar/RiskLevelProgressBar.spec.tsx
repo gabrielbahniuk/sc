@@ -1,5 +1,5 @@
 import React from 'react'
-import RiskLevelProgressBar from '.'
+import { RiskLevelProgressBar } from './RiskLevelProgressBar'
 import { create } from 'react-test-renderer'
 
 describe('Test Progress Bar', () => {

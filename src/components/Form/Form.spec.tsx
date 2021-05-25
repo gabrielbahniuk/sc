@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { shallow, ShallowWrapper } from 'enzyme'
-import Button from '@/components/Button'
-import RiskLevelSelector from '@/components/RiskLevelSelector'
-import RiskLevelProgressBar from '@/components/RiskLevelProgressBar'
-import Form from '.'
+import { Button } from '@/components/Button'
+import { RiskLevelSelector } from '@/components/RiskLevelSelector'
+import { RiskLevelProgressBar } from '@/components/RiskLevelProgressBar'
+import { Form } from './Form'
 
 describe('Test Form component', () => {
   it('should render Form', () => {

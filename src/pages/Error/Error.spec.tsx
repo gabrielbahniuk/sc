@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, ShallowWrapper } from 'enzyme'
 import { create } from 'react-test-renderer'
-import Error from '.'
+import { Error } from './Error'
 
 let wrapper: ShallowWrapper
 

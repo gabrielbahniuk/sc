@@ -1,5 +1,5 @@
 import React from 'react'
-import Table from '.'
+import { Table } from './Table'
 import { create } from 'react-test-renderer'
 import { shallow } from 'enzyme'
 

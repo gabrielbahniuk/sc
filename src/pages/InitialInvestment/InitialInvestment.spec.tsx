@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, ShallowWrapper } from 'enzyme'
-import InitialInvestment from '.'
-import Form from '@/components/Form'
+import { InitialInvestment } from './InitialInvestment'
+import { Form } from '@/components/Form'
 import { create } from 'react-test-renderer'
 
 describe('InitialInvestment Page', () => {

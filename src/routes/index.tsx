@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import InitialInvestment from '@/pages/InitialInvestment'
-import Result from '@/pages/Result'
-import Header from '@/components/Header'
+import { InitialInvestment } from '@/pages/InitialInvestment'
+import { Result } from '@/pages/Result'
+import { Header } from '@/components/Header'
 
 const Routes: React.FC = () => {
   return (

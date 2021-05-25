@@ -1,6 +1,6 @@
 import React from 'react'
 import { create } from 'react-test-renderer'
-import Chart from '.'
+import { Chart } from '.'
 
 describe('Test Chart component', () => {
   it('should render Chart', () => {
