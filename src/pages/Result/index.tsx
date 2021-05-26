@@ -43,39 +43,37 @@ const Result: React.FC = () => {
 
   return (
     <>
-      {hasError ? (
+      {hasError || cones.length < 1 ? (
         <Error />
       ) : (
-        cones.length > 0 && (
-          <Container data-testid="resultContainer">
-            <h1 data-cy="titleResult">Result</h1>
-            <Chart
-              cones={cones}
-              yearsInvestment={amountInvestmentYears}
-              investmentValue={initialInvestment}
-              riskLevel={riskLevel}
-            />
+        <Container data-testid="resultContainer">
+          <h1 data-cy="titleResult">Result</h1>
+          <Chart
+            cones={cones}
+            yearsInvestment={amountInvestmentYears}
+            investmentValue={initialInvestment}
+            riskLevel={riskLevel}
+          />
 
-            <ButtonSection>
-              <Button data-cy="btnToggleTable" onClick={handleToggleTable}>
-                {isVisible ? 'Hide ' : 'Show'}Table
+          <ButtonSection>
+            <Button data-cy="btnToggleTable" onClick={handleToggleTable}>
+              {isVisible ? 'Hide ' : 'Show'}Table
+            </Button>
+            <Link to="/">
+              <Button data-cy="btnReset" onClick={handleReset} restart="true">
+                Restart
               </Button>
-              <Link to="/">
-                <Button data-cy="btnReset" onClick={handleReset} restart="true">
-                  Restart
-                </Button>
-              </Link>
-            </ButtonSection>
+            </Link>
+          </ButtonSection>
 
-            <Table
-              isVisible={isVisible}
-              cones={cones}
-              riskLevel={riskLevel}
-              yearsInvestment={amountInvestmentYears}
-              investmentValue={initialInvestment}
-            />
-          </Container>
-        )
+          <Table
+            isVisible={isVisible}
+            cones={cones}
+            riskLevel={riskLevel}
+            yearsInvestment={amountInvestmentYears}
+            investmentValue={initialInvestment}
+          />
+        </Container>
       )}
     </>
   )
