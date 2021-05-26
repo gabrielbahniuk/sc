@@ -1,5 +1,5 @@
 <h2 align="center">
-    <img src="./src/assets/logo.svg" width="30%">
+    <img src="./assets/logo.svg" width="30%">
 </h2>
 
 <h2 align="center">
@@ -12,7 +12,11 @@
 
 #### Start Server
 
-###### It is recommended to run the server in a separated window.
+###### :grey_exclamation: It is recommended to run the server in a separated window:
+
+<h2 align="center">
+    <img src="./assets/run-server-parallel.gif">
+</h2>
 
 ```bash
 
