@@ -1,6 +1,6 @@
 import React from 'react'
 import Routes from './routes'
-import { InvestmentsProvider } from './hooks'
+import { ConesProvider, InvestmentsProvider } from './hooks'
 
 import { GlobalStyle } from './styles/global'
 import { BrowserRouter } from 'react-router-dom'
@@ -10,7 +10,9 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <InvestmentsProvider>
-          <Routes />
+          <ConesProvider>
+            <Routes />
+          </ConesProvider>
         </InvestmentsProvider>
       </BrowserRouter>
       <GlobalStyle />

@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useInvestments } from '@/hooks'
-import { api } from '@/services/api'
+import { useInvestments, useCones } from '@/hooks'
 import { Error } from '@/pages/Error'
 import { Chart } from '@/components/Chart'
 import { Table } from '@/components/Table'
@@ -9,32 +8,13 @@ import { Button } from '@/components/Button'
 
 import { ButtonSection, Container } from './styles'
 
-type Cone = {
-  riskLevel: number
-  mu: number
-  sigma: number
-}
-
 const Result: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const [cones, setCones] = useState<Cone[]>([])
-  const [hasError, setHasError] = useState(false)
   const { handleReset, initialInvestment, amountInvestmentYears, riskLevel } = useInvestments()
-
+  const { cones, hasError } = useCones()
   function handleToggleTable(): void {
     setIsVisible((prevState) => !prevState)
   }
-
-  function loadData(): void {
-    api
-      .get('/api/cones')
-      .then(({ data }) => setCones(data))
-      .catch(() => setHasError(true))
-  }
-
-  useEffect(() => {
-    loadData()
-  }, [])
 
   return (
     <>
