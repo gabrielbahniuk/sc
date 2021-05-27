@@ -37,6 +37,13 @@ module.exports = {
       },
     ],
   },
+  externals: {
+    react: 'React',
+    axios: 'axios',
+    'react-dom': 'ReactDOM',
+    'react-router-dom': 'ReactRouterDOM',
+    'chart.js': 'chart.js',
+  },
   mode: isDevelopment ? 'development' : 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
