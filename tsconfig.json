@@ -12,9 +12,12 @@
     "moduleResolution": "node",
     "jsx": "react",
     "rootDir": "src",
+    "sourceMap": true,
+    "outDir": "./build",
     "baseUrl": "src",
     "allowJs": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "paths": {
       "@/*": ["*"]
     },
@@ -23,6 +26,6 @@
     "src"
   ],
   "exclude": [
-    "cypress", "./node_modules/*"
+    "cypress", "node_modules", "./dist", "**/*.spec.tsx",
   ]
 }

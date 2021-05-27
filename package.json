@@ -4,8 +4,9 @@
   "description": "Test Assignment For Frontend Developers",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
-    "server": "json-server --routes ./server/routes.json ./server/cones.json -p 3333",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "server": "json-server --routes ./server/routes.json ./server/cones.json -p 3333 --delay 1000",
     "lint": "eslint src",
     "test": "jest --passWithNoTests --no-cache --verbose --runInBand",
     "test:watch": "npm run test -- --watch",

@@ -7,6 +7,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.tsx'),
+  devtool: isDevelopment ? 'inline-source-map' : false,
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
@@ -38,17 +39,18 @@ module.exports = {
   },
   mode: isDevelopment ? 'development' : 'production',
   output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build'),
   },
   plugins: [
     isDevelopment && new ReactRefreshWebpackPlugin(),
     isDevelopment && new webpack.HotModuleReplacementPlugin(),
-    new CopyWebpackPlugin({ patterns: [{ from: 'public/index.html' }] }),
+    isDevelopment && new CopyWebpackPlugin({ patterns: [{ from: 'public/index.html' }] }),
   ].filter(Boolean),
   devServer: {
     port: 3000,
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'dist'),
     hot: true,
     open: true,
     historyApiFallback: true,
