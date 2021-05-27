@@ -25,16 +25,11 @@ const Result: React.FC = () => {
     setIsVisible((prevState) => !prevState)
   }
 
-  async function loadData(): Promise<void> {
-    try {
-      const { data } = await api.get('/api/cones')
-      if (!data) {
-        return
-      }
-      setCones(data)
-    } catch (error) {
-      setHasError(true)
-    }
+  function loadData(): void {
+    api
+      .get('/api/cones')
+      .then(({ data }) => setCones(data))
+      .catch(() => setHasError(true))
   }
 
   useEffect(() => {
