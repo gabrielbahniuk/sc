@@ -40,9 +40,9 @@ module.exports = {
   externals: {
     react: 'React',
     axios: 'axios',
+    moment: 'moment',
     'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReactRouterDOM',
-    'chart.js': 'chart.js',
+    'react-router-dom': 'ReactRouterDOM'
   },
   mode: isDevelopment ? 'development' : 'production',
   output: {
