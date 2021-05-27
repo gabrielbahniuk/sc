@@ -5,6 +5,7 @@ import { Error } from '@/pages/Error'
 import { Chart } from '@/components/Chart'
 import { Table } from '@/components/Table'
 import { Button } from '@/components/Button'
+import { BarLoader } from 'react-spinners'
 
 import { ButtonSection, Container } from './styles'
 
@@ -18,10 +19,14 @@ const Result: React.FC = () => {
 
   return (
     <>
-      {hasError || cones.length < 1 ? (
+      {hasError ? (
         <Error />
+      ) : cones.length === 0 ? (
+        <Container data-cy="loadingComponent">
+          <BarLoader height={5} width="80%" loading={cones.length === 0} color="#28EBCF" />
+        </Container>
       ) : (
-        <Container data-testid="resultContainer">
+        <Container data-cy="resultContainer" data-testid="resultContainer">
           <h1 data-cy="titleResult">Result</h1>
           <Chart
             cones={cones}
@@ -29,7 +34,6 @@ const Result: React.FC = () => {
             investmentValue={initialInvestment}
             riskLevel={riskLevel}
           />
-
           <ButtonSection>
             <Button data-cy="btnToggleTable" onClick={handleToggleTable}>
               {isVisible ? 'Hide ' : 'Show'}Table
@@ -40,7 +44,6 @@ const Result: React.FC = () => {
               </Button>
             </Link>
           </ButtonSection>
-
           <Table
             isVisible={isVisible}
             cones={cones}
