@@ -7,15 +7,14 @@ declare namespace Cypress {
 }
 
 type InputValues = {
-  url?: string
   investmentValue: string
   yearsInvestment: string
   riskLevel: string
 }
 
-Cypress.Commands.add('loadInitialValues', ({ url = 'http://localhost:3000', ...initialValues }: InputValues) => {
+Cypress.Commands.add('loadInitialValues', ({ ...initialValues }: InputValues) => {
   const { investmentValue, riskLevel, yearsInvestment } = initialValues
-  cy.visit(url)
+
   cy.get('[data-cy=initialInvestment]').should('have.value', investmentValue)
   cy.get('[data-cy=amountInvestmentYears]').should('have.value', yearsInvestment)
   cy.get('[data-cy=riskLevelSelector]').should('have.value', riskLevel)
