@@ -1,4 +1,4 @@
-export const appConfig = {
+export const appConfig = Object.freeze({
   MINIMUM_INITIAL_INVESTMENT: 10000,
   MINIMUM_YEARS_INVESTMENT: 1,
   MAXIMUM_YEARS_INVESTMENT: 30,
@@ -6,4 +6,4 @@ export const appConfig = {
   MAXIMUM_RISK_LEVEL: 25,
   FEE: 0.01,
   MONTHLY_SUM: 200
-}
+})
