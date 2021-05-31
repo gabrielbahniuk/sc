@@ -16,11 +16,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 12,
-      "sourceType": "module"
+    "project": "./tsconfig-eslint.json"
   },
   "plugins": [
       "react",
@@ -35,6 +31,5 @@
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "max-len": [1, { "code": 120 }]
-
   }
 }
