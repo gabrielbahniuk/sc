@@ -169,6 +169,7 @@ exports[`InitialInvestment Page should match snapshot 1`] = `
       className="sc-dlnjwi gafhhG"
       data-cy="btnCalculate"
       onClick={[Function]}
+      type="button"
     >
       Calculate
     </button>

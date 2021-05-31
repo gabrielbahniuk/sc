@@ -163,6 +163,7 @@ exports[`Test Form component should render Form 1`] = `
     className="sc-bdnxRM dmWuXT"
     data-cy="btnCalculate"
     onClick={[Function]}
+    type="button"
   >
     Calculate
   </button>
