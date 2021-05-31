@@ -4,8 +4,9 @@
   "description": "Test Assignment For Frontend Developers",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack --mode production",
+    "start": "node index.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "server": "json-server --routes ./server/routes.json ./server/cones.json -p 3333 --delay 1000",
     "lint": "eslint src",
     "test": "jest --passWithNoTests --no-cache --verbose --runInBand",
@@ -19,6 +20,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
+    "express": "^4.17.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
