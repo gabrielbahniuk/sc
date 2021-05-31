@@ -35,11 +35,11 @@ const Result: React.FC = () => {
             riskLevel={riskLevel}
           />
           <ButtonSection>
-            <Button data-cy="btnToggleTable" onClick={handleToggleTable}>
+            <Button type="button" data-cy="btnToggleTable" onClick={handleToggleTable}>
               {isVisible ? 'Hide ' : 'Show'}Table
             </Button>
             <Link to="/">
-              <Button data-cy="btnReset" onClick={handleReset} restart="true">
+              <Button type="button" data-cy="btnReset" onClick={handleReset} restart="true">
                 Restart
               </Button>
             </Link>

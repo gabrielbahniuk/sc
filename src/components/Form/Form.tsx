@@ -55,7 +55,7 @@ const Form: React.FC = () => {
         <RiskLevelSelector data-cy="riskLevelSelector" riskLevel={riskLevel} handleRiskLevel={handleRiskLevel} />
       </label>
       <RiskLevelProgressBar riskLevel={riskLevel} />
-      <Button data-cy="btnCalculate" onClick={handleNextPage}>
+      <Button type="button" data-cy="btnCalculate" onClick={handleNextPage}>
         Calculate
       </Button>
     </FormContainer>

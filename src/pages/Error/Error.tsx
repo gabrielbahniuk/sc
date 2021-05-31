@@ -9,7 +9,7 @@ const Error: React.FC = () => {
   return (
     <Container>
       <h1 data-cy="titleError">Uuups, there was probably a network problem :(</h1>
-      <Button data-cy="btnReset" onClick={handleReset}>
+      <Button type="button" data-cy="btnReset" onClick={handleReset}>
         Let&apos;s try again
       </Button>
     </Container>
