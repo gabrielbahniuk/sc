@@ -40,13 +40,13 @@ module.exports = merge(common, {
     axios: 'axios',
     moment: 'moment',
     'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReactRouterDOM'
+    'react-router-dom': 'ReactRouterDOM',
+    'chart.js': 'Chart'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './template.prod.html',
-      minify: false,
       inject: 'body'
-    }),
+    })
   ]
 });
