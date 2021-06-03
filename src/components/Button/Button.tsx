@@ -1,16 +1,15 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 
 import { Container } from './styles'
 
 type ButtonProps = {
-  children?: React.ReactNode
-  onClick?: any
-  rest?: any
-  [x: string]: any
+  onClick?: () => void
+  type: string
+  restart?: string
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, ...rest }) => {
+const Button: React.FC<ButtonProps> = (props) => {
+  const { children, onClick, ...rest } = props
   return (
     <Container onClick={onClick} {...rest}>
       {children}
