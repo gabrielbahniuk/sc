@@ -10,65 +10,45 @@
 
 ### :information_source: How To Run
 
-#### Start Server
+###### :grey_exclamation: Before anything, please run:
 
+- `git clone https://github.com/gabrielbahniuk/sc.git` to download the project.
+- `cd scalable-capital-ts` to be in the right directory.
+- `npm install` to install required dependencies.
+#### Start Server
+```bash
+npm run server
+```
 ###### :grey_exclamation: It is recommended to run the server in a separated window:
 
 <h2 align="center">
     <img src="./assets/run-server-parallel.gif">
 </h2>
 
-```bash
-
-$ cd scalable-capital-ts
-
-# install dependencies
-$ npm install
-
-# Run server
-$ npm run server
-```
-
 #### Run Tests
-
 ##### Enzyme
 
 ```bash
-
-$ cd scalable-capital-ts
-
-# install dependencies
-$ npm install
-
-# Run tests
-$ npm run test
+npm run test
 ```
-
 ##### Cypress
 
 ```bash
-
-$ cd scalable-capital-ts
-
-# install dependencies
-$ npm install
-
 # Run tests with UI
-$ npm run cypress:open
-
-# Run tests in background
-$ npm run cypress:run
+npm run cypress:open
 ```
 
-#### Run Application
+```bash
+# Run tests in background
+npm run cypress:run
+```
+#### Run Application (Dev Mode)
 
 ```bash
+npm run dev
+```
+#### Build
 
-$ cd scalable-capital-ts
-
-# install dependencies
-$ npm install
-
-# Run application
-$ npm start
+```bash
+npm run build
 ```
